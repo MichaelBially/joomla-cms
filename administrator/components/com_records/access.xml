@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<access component="com_records">
+	<section name="component">
+		<action name="records.manage" title="Records_MANAGE" />
+		<action name="records.create" title="Records_CREATE" />
+		<action name="records.edit" title="Records_EDIT" />
+		<action name="records.delete" title="Records_DELETE" />
+		
+		
+
+		
+	</section>
+
+
+</access>

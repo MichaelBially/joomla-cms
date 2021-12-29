@@ -1,0 +1,132 @@
+// Bootstrap functions
+@import "../../../media/vendor/bootstrap/scss/functions";
+
+// Variables, Functions and Mixins
+//@import "tools/tools";
+@import "colors";
+
+// Bootstrap
+@import "../../../media/vendor/bootstrap/scss/variables";
+@import "../../../media/vendor/bootstrap/scss/bootstrap";
+
+
+
+//@import "vendor/bootstrap/nav";
+
+/*
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link{   }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}
+*/
+
+// chosen plugin Anpassung der Größe
+.search-choice
+{
+	width: 100%;
+}
+
+
+// Hintergrund für gesamtes Menu
+.bg-tsv-topmenu
+{
+	background-color: $top-navbar-background-color;
+	
+	border-top: 2px solid $top-navbar-background-color; 
+	border-bottom: 2px solid $top-navbar-background-color; 
+	border-left: 5px solid $top-navbar-background-color;
+}
+
+.bg-tsv-topmenu-second-line
+{
+	background-color: $top-navbar-background-color-second-line;
+	
+	border-top: 2px solid $top-navbar-background-color-second-line; 
+	border-bottom: 2px solid $top-navbar-background-color-second-line; 
+	border-left: 5px solid $top-navbar-background-color-second-line;
+}
+
+
+// normale Schrift in der vertikalen Menuzeile
+.navbar-light .navbar-nav .nav-item .nav-link
+{
+	color: $top-navbar-font-color;	
+}
+
+// weiße Hervorhebung wenn Maus über einen Link in der vertikalen Menuzeile gezogen wird
+.navbar-light .navbar-nav .nav-item .nav-link:hover
+{
+	color: black;
+	background-color: white;
+	border-radius: 0.25rem;
+}
+
+// Graue markierung im Dropdownmenu wenn Maus darübergezogen wird
+.navbar-light .navbar-nav .dropdown-item .nav-link:hover, .navbar-light .navbar-nav .dropdown-item:hover
+{
+	color: black;
+	background-color: $gray-200;
+	border-radius: 0.25rem;
+}
+
+// schwarze Schrift im Dropdown-Menu
+.navbar-light .navbar-nav .dropdown-item .nav-link
+{
+	color: black;
+}
+
+// aktiven Menu-Punkt fett anzeigen in der vertikalen Zeile und im Dropdownmenu
+.navbar-light .navbar-nav .nav-item .nav-link.active
+{
+	font-weight: bold;
+}
+
+// wenn Dropdownmenu angeklickt wird, bleibt die weiße Markierung im vertikalen Menu
+.navbar-light .navbar-nav .nav-item .nav-link.show
+{
+	background-color: white;
+	border-radius: 0.25rem;
+	color: black;
+}
+
+// aktiven Dropdownmenu-Punkt fett und mit Hintergrund weiß darstellen
+.dropdown-item.active, .dropdown-item:active
+{
+	font-weight: bold;
+	background-color: white; 
+	//background-color: $gray-400;
+}
+
+.navbar-light .navbar-nav .dropdown-item .nav-link.active
+{
+	//background-color: $gray-400;
+}
+
+.dropdown-divider
+{
+	//border-bottom: 1px solid gray;
+	height: 1px;
+    margin: 0 0 0 0;
+    margin-left: 20px;
+    margin-right: 10px;
+    list-style: none;
+    background-color: $gray-400;
+}
+
+// damit der Zeilenumbruch im Menu klappt
+.navbar>.container-fluid
+{
+	display: block;	
+}
+
+
+
+.container-sidebar-left .mod-custom
+{
+	border: 1px solid $gray-200;
+}
+
+
+
